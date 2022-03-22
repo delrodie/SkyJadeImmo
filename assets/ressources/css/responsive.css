@@ -1,0 +1,49 @@
+@media screen and (max-width: 425px) {
+  .cover .recherche {
+    margin-top: -80px;
+    width: 80%;
+    margin-left: 10%;
+  }
+  .cover .recherche label {
+    font-size: 1rem;
+  }
+  .cover .recherche input,
+.cover .recherche .btn-search {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 767px) {
+  .cover .recherche {
+    margin-top: -160px;
+    width: 80%;
+    margin-left: 10%;
+  }
+  .cover .recherche label {
+    font-size: 1rem;
+  }
+  .cover .recherche input,
+.cover .recherche .btn-search {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .cover .recherche {
+    margin-top: -160px;
+    width: 80%;
+    margin-left: 10%;
+  }
+  .cover .recherche label {
+    font-size: 1rem;
+  }
+  .cover .recherche input,
+.cover .recherche .btn-search {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cover .recherche input {
+    font-size: 1rem;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */

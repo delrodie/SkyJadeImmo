@@ -1,0 +1,64 @@
+.icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.accueil {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../images/cover-accueil.jpg");
+  background-size: cover;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.palette {
+  margin: 25px auto;
+}
+.palette a {
+  text-decoration: none;
+}
+.palette .immobilier h3 {
+  background: #fff;
+  padding: 20px 50px;
+  border-radius: 7px;
+  color: #053e41;
+}
+.palette .immobilier h3::before {
+  font: var(--fa-font-solid);
+  content: "\e3af";
+  padding-right: 15px;
+}
+.palette .immobilier h3:hover {
+  background: #053e41;
+  color: white;
+}
+.palette .automobile h3 {
+  background: #fff;
+  padding: 20px 50px;
+  border-radius: 7px;
+  color: #053e41;
+}
+.palette .automobile h3::before {
+  font: var(--fa-font-solid);
+  content: "\f1b9";
+  padding-right: 15px;
+}
+.palette .automobile h3:hover {
+  background: #053e41;
+  color: white;
+}
+
+.maintenance h5 {
+  font-style: italic;
+}
+.maintenance h5:hover {
+  cursor: pointer;
+  color: #053e41;
+}
+
+/*# sourceMappingURL=accueil.css.map */

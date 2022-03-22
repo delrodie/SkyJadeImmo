@@ -1,0 +1,408 @@
+@use 'variables';
+
+header{
+    #entete{
+      @include variables.bgsecondaire;
+      color: white;  
+    }
+    
+
+    .entete{
+        padding: 7px 0;
+        font-weight: bold;
+        font-size: .9rem;
+    }
+
+    a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .plateforme{
+        a{
+            &:first-child{
+                margin-right: 15px;
+
+                &::before{
+                    font: var(--fa-font-solid);
+                    content: '\f26c';
+                    padding-right: 5px;
+                }
+            }
+            &:last-child{
+                margin-left: 15px;
+
+                &::before{
+                    font: var(--fa-font-solid);
+                    content: '\f1b9';
+                    padding-right: 5px;
+                }
+            }
+
+            &:hover{
+                @include variables.couleurquatre;
+            }
+        }
+    }
+
+    .connexion{
+        justify-content: right;
+        text-align: right;
+
+        a{
+            &:last-child{
+                margin-left: 5px;
+            }
+            &:first-child{
+                margin-right: 5px;
+            }
+
+            &:hover{
+                @include variables.couleurquatre;
+            }
+        }
+
+    }
+
+    #menu{
+        @include variables.bgnavbar;
+
+        &.menu{
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+        }
+    }
+}
+
+main{
+    #domaine{
+        &.domaine{
+            margin-bottom: 100px;
+
+            a{
+                text-decoration: none;
+                color: white;
+
+                &:hover{
+                    @include variables.couleurquatre;
+                }
+            }
+
+            .card{
+                min-height: 200px;
+                max-height: 200px;
+                cursor: pointer;
+
+                .card-body{
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    #presentation{
+        &.presentation{
+            background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8), rgba(1, 104, 109, 0.9) ), url('../images/bg-accueil.jpg'); 
+            background-size: cover; 
+            background-attachment: fixed; 
+            background-position: center; 
+            background-repeat: no-repeat;
+
+            margin-bottom: 50px;
+
+            .container{
+                padding: 100px 0;
+                color: white;
+
+                .textPresentation{
+                    padding: 50px 10px;
+                }
+            }
+
+            .btn-suite{
+                border: solid 1px white;
+                font-weight: bold;
+                color: #fff;
+
+                &:hover{
+                    background: #fff;
+                    @include variables.couleursecndaire;
+                }
+            }
+
+            .logo{
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+
+                img{
+                    max-width: 300px;
+                }
+            }
+        }
+    }
+    #videos{
+        &.videos{
+            margin-top: 100px;
+
+            .card{
+                a{
+                    color: #fff;
+                    text-decoration: none;
+
+                    &:hover .card-footer{
+                        background: rgba(0,0,0,0.6);
+                    }
+                }
+                &.principale{
+                    .card-body{
+                        min-height: 400px;
+                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        align-content: center;
+
+                        &:hover{
+                            .fas{
+                                @include variables.couleurquatre;
+                                animation: pulse 2s infinite;
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+                    .card-footer{
+                        color: #fff;    
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+                &.secondaire{
+                    .card-body{
+                        min-height: 100px;
+                        max-height: 100px;
+                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        align-content: center;
+
+                        &:hover{
+                            .fas{
+                                @include variables.couleurquatre;
+                                animation: pulse 2s infinite;
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+                    .card-footer{
+                        color: #fff;    
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+        }
+    }
+    #conseils{
+        &.conseils{
+            background: rgba(rgb(218, 216, 216), 0.4);
+            margin: 100px auto;
+        }
+
+        .container{
+            padding: 80px 0;
+
+            a{
+                @include variables.couleurprincipale;
+                text-decoration: none;
+
+                &:hover{
+                    @include variables.couleurquatre;
+                }
+            }
+
+        }
+    }
+}
+
+footer{
+    #partenaires{
+        &.partenaires{
+
+            h3{
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 1.3rem;
+                @include variables.couleursecndaire;
+            }
+            
+            .logo-partenaires{
+                width: 100%;
+                display: inline;
+            }
+
+            .logo{
+                display: inline;
+            } 
+        }
+    }
+    #footer{
+        &.footer{
+            background: #022d2d;
+
+            .container{
+                padding: 100px 0 10px 0;
+                color: rgb(185, 183, 183);
+
+                img{
+                    float: left;
+                    padding: 10px 15px 20px 10px;
+                    margin-right: 10px;
+                    border: solid 1px rgba(92, 91, 91, 0.4);
+                }
+
+                a{
+                    color: #7b9190;
+                    text-decoration: none;
+
+                    &:hover{
+                        color: #07ddd7;
+                    }
+                }
+
+                .rubrique{
+                    div{
+                        padding-bottom: 10px;
+                    }
+                }
+
+                .social-line{
+                    margin-top: 30px;
+                    padding-top: 15px;
+                    padding-bottom: 0;
+                    border-top: solid 1px rgba(123, 145, 144, 0.4);
+
+                    .condition{
+                        font-size: 0.9rem;
+                        display: flex;
+                        justify-content: end;
+                        align-content: center;
+                        align-items: center;
+
+                        a:last-child{
+                            padding-left: 10px;
+                        }
+                        a:first-child{
+                            padding-right: 10px;
+                        }
+                    }
+
+                    .social{
+                        font-size: 1.5rem;
+
+                        .facebook:hover{
+                            color: #073391;
+                        }
+                        .linkedin:hover{
+                            color: #0e76a8 ;
+                        }
+                        .instagram:hover{
+                            color: #8a3ab9 ;
+                        }
+                        .youtube:hover{
+                            color: #c4302b ;
+                        }
+                        .twitter:hover{
+                            color: #00acee ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #copyright{
+        &.copyright{
+            background: #000c0c;
+
+            .container{
+                padding: 10px 0;
+                font-size: 0.8rem;
+                font-weight: bold;
+                color: rgb(97, 95, 95);
+
+                a{
+                    color: rgb(97, 95, 95);
+                    text-decoration: none;
+                    
+                    &:hover{
+                        color: #ccc;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 20px rgba(255, 68, 68, 0);
+    }
+    100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(255, 68, 68, 0);
+    }
+  }
+  @keyframes pulse-hover {
+    0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(17, 118, 190, 0.7);
+    }
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 20px rgba(17, 118, 190, 0);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(17, 118, 190, 0);
+    }
+  }
+
+@media screen and (min-width: 425px) {
+    header{
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (min-width:426px) and (max-width:767px) {
+    header{
+        margin-bottom: 140px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    header{
+        margin-bottom: 140px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header{
+        margin-bottom: 280px;
+    }
+}

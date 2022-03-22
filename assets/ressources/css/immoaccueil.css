@@ -1,0 +1,321 @@
+.icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+header #entete {
+  background: #053e41;
+  color: white;
+}
+header .entete {
+  padding: 7px 0;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+header a {
+  color: white;
+  text-decoration: none;
+}
+header .plateforme a:first-child {
+  margin-right: 15px;
+}
+header .plateforme a:first-child::before {
+  font: var(--fa-font-solid);
+  content: "\f26c";
+  padding-right: 5px;
+}
+header .plateforme a:last-child {
+  margin-left: 15px;
+}
+header .plateforme a:last-child::before {
+  font: var(--fa-font-solid);
+  content: "\f1b9";
+  padding-right: 5px;
+}
+header .plateforme a:hover {
+  color: #2fbab6;
+}
+header .connexion {
+  justify-content: right;
+  text-align: right;
+}
+header .connexion a:last-child {
+  margin-left: 5px;
+}
+header .connexion a:first-child {
+  margin-right: 5px;
+}
+header .connexion a:hover {
+  color: #2fbab6;
+}
+header #menu {
+  background: rgba(2, 102, 102, 0.5);
+}
+header #menu.menu {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+main #domaine.domaine {
+  margin-bottom: 100px;
+}
+main #domaine.domaine a {
+  text-decoration: none;
+  color: white;
+}
+main #domaine.domaine a:hover {
+  color: #2fbab6;
+}
+main #domaine.domaine .card {
+  min-height: 200px;
+  max-height: 200px;
+  cursor: pointer;
+}
+main #domaine.domaine .card .card-body {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-transform: uppercase;
+}
+main #presentation.presentation {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8), rgba(1, 104, 109, 0.9)), url("../images/bg-accueil.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+}
+main #presentation.presentation .container {
+  padding: 100px 0;
+  color: white;
+}
+main #presentation.presentation .container .textPresentation {
+  padding: 50px 10px;
+}
+main #presentation.presentation .btn-suite {
+  border: solid 1px white;
+  font-weight: bold;
+  color: #fff;
+}
+main #presentation.presentation .btn-suite:hover {
+  background: #fff;
+  color: #053e41;
+}
+main #presentation.presentation .logo {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+main #presentation.presentation .logo img {
+  max-width: 300px;
+}
+main #videos.videos {
+  margin-top: 100px;
+}
+main #videos.videos .card a {
+  color: #fff;
+  text-decoration: none;
+}
+main #videos.videos .card a:hover .card-footer {
+  background: rgba(0, 0, 0, 0.6);
+}
+main #videos.videos .card.principale .card-body {
+  min-height: 400px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+main #videos.videos .card.principale .card-body:hover .fas {
+  color: #2fbab6;
+  animation: pulse 2s infinite;
+  border-radius: 50%;
+}
+main #videos.videos .card.principale .card-footer {
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+main #videos.videos .card.secondaire .card-body {
+  min-height: 100px;
+  max-height: 100px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+main #videos.videos .card.secondaire .card-body:hover .fas {
+  color: #2fbab6;
+  animation: pulse 2s infinite;
+  border-radius: 50%;
+}
+main #videos.videos .card.secondaire .card-footer {
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+main #conseils.conseils {
+  background: rgba(218, 216, 216, 0.4);
+  margin: 100px auto;
+}
+main #conseils .container {
+  padding: 80px 0;
+}
+main #conseils .container a {
+  color: #09696d;
+  text-decoration: none;
+}
+main #conseils .container a:hover {
+  color: #2fbab6;
+}
+
+footer #partenaires.partenaires h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #053e41;
+}
+footer #partenaires.partenaires .logo-partenaires {
+  width: 100%;
+  display: inline;
+}
+footer #partenaires.partenaires .logo {
+  display: inline;
+}
+footer #footer.footer {
+  background: #022d2d;
+}
+footer #footer.footer .container {
+  padding: 100px 0 10px 0;
+  color: #b9b7b7;
+}
+footer #footer.footer .container img {
+  float: left;
+  padding: 10px 15px 20px 10px;
+  margin-right: 10px;
+  border: solid 1px rgba(92, 91, 91, 0.4);
+}
+footer #footer.footer .container a {
+  color: #7b9190;
+  text-decoration: none;
+}
+footer #footer.footer .container a:hover {
+  color: #07ddd7;
+}
+footer #footer.footer .container .rubrique div {
+  padding-bottom: 10px;
+}
+footer #footer.footer .container .social-line {
+  margin-top: 30px;
+  padding-top: 15px;
+  padding-bottom: 0;
+  border-top: solid 1px rgba(123, 145, 144, 0.4);
+}
+footer #footer.footer .container .social-line .condition {
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: end;
+  align-content: center;
+  align-items: center;
+}
+footer #footer.footer .container .social-line .condition a:last-child {
+  padding-left: 10px;
+}
+footer #footer.footer .container .social-line .condition a:first-child {
+  padding-right: 10px;
+}
+footer #footer.footer .container .social-line .social {
+  font-size: 1.5rem;
+}
+footer #footer.footer .container .social-line .social .facebook:hover {
+  color: #073391;
+}
+footer #footer.footer .container .social-line .social .linkedin:hover {
+  color: #0e76a8;
+}
+footer #footer.footer .container .social-line .social .instagram:hover {
+  color: #8a3ab9;
+}
+footer #footer.footer .container .social-line .social .youtube:hover {
+  color: #c4302b;
+}
+footer #footer.footer .container .social-line .social .twitter:hover {
+  color: #00acee;
+}
+footer #copyright.copyright {
+  background: #000c0c;
+}
+footer #copyright.copyright .container {
+  padding: 10px 0;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #615f5f;
+}
+footer #copyright.copyright .container a {
+  color: #615f5f;
+  text-decoration: none;
+}
+footer #copyright.copyright .container a:hover {
+  color: #ccc;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 20px rgba(255, 68, 68, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 68, 68, 0);
+  }
+}
+@keyframes pulse-hover {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(17, 118, 190, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 20px rgba(17, 118, 190, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(17, 118, 190, 0);
+  }
+}
+@media screen and (min-width: 425px) {
+  header {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 767px) {
+  header {
+    margin-bottom: 140px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header {
+    margin-bottom: 140px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header {
+    margin-bottom: 280px;
+  }
+}
+
+/*# sourceMappingURL=immoaccueil.css.map */

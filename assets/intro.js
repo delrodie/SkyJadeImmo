@@ -6,9 +6,8 @@
  */
 
 // any CSS you import will output into a single css file (app.css in this case)
-//import './styles/app.css';
 import './ressources/css/skyjade.css';
-//import './ressources/sass/skyjade.scss';
+import './ressources/css/accueil.css'
 
 // start the Stimulus application
 import './bootstrap';

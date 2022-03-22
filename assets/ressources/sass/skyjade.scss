@@ -1,0 +1,61 @@
+@use 'variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap');
+
+
+$main-color: #09696d;
+$secondary-color: #053e41;
+
+.icon::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.bgmenu-scrol{
+    @include variables.bgnavbar-scroll;
+  }
+
+
+.cover{
+    .recherche{
+        width: 50%;
+        margin-top: -300px;
+        margin-left: 25%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+
+        input{
+            background-color: rgba($color: #000, $alpha: 0.4) !important;
+            color: white;
+            text-align: center;
+            border-right: 0;
+
+            &::placeholder{
+                color: white;
+            }
+        }
+
+        label{
+            color: white;
+            font-size: 1.7rem;
+        }
+
+        .btn-search{
+            background-color: rgba($color: #000, $alpha: 0.4) !important;
+            border-right: white 1px solid;
+            border-top: white 1px solid;
+            border-bottom: white 1px solid;
+            border-left: 0;
+            color: white;
+        }
+        
+    }
+}

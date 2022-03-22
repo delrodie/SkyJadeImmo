@@ -1,0 +1,83 @@
+$main-color: #09696d;
+$secondary-color: #053e41;
+
+
+.icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.accueil{
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.9), 
+      rgba(0, 0, 0, 0.9)
+    ),
+    url('/assets/images/cover-accueil.jpg');
+    background-size: cover;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.palette{
+  margin: 25px auto;
+
+  a{
+    text-decoration: none;
+  }
+
+  .immobilier h3{
+    background: #fff;
+    padding: 20px 50px;
+    border-radius: 7px;
+    color: #053e41;
+
+    &::before{
+      font: var(--fa-font-solid);
+      content: "\e3af";
+      padding-right: 15px;
+    }
+    
+
+    &:hover{
+      background: $secondary-color;
+      color: white;
+    }
+
+  }
+
+  .automobile h3{
+    background: #fff;
+    padding: 20px 50px;
+    border-radius: 7px;
+    color: #053e41;
+
+    &::before{
+      font: var(--fa-font-solid);
+      content: "\f1b9";
+      padding-right: 15px;
+    }
+
+    &:hover{
+      background: $secondary-color;
+      color: white;
+    }
+  }
+}
+
+.maintenance{
+  h5{
+    font-style: italic;
+
+    &:hover{
+      cursor: pointer;
+      color: $secondary-color;
+    }
+  }
+}

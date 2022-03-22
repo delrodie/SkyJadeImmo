@@ -1,0 +1,276 @@
+.icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+header #entete {
+  background: #053e41;
+  color: white;
+}
+header .entete {
+  padding: 7px 0;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+header a {
+  color: white;
+  text-decoration: none;
+}
+header .plateforme a:first-child {
+  margin-right: 15px;
+}
+header .plateforme a:first-child::before {
+  font: var(--fa-font-solid);
+  content: "\f26c";
+  padding-right: 5px;
+}
+header .plateforme a:last-child {
+  margin-left: 15px;
+}
+header .plateforme a:last-child::before {
+  font: var(--fa-font-solid);
+  content: "\f1b9";
+  padding-right: 5px;
+}
+header .plateforme a:hover {
+  color: #2fbab6;
+}
+header .connexion {
+  justify-content: right;
+  text-align: right;
+}
+header .connexion a:last-child {
+  margin-left: 5px;
+}
+header .connexion a:first-child {
+  margin-right: 5px;
+}
+header .connexion a:hover {
+  color: #2fbab6;
+}
+header #menu {
+  background: rgba(2, 102, 102, 0.5);
+}
+header #menu.menu {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+header #pagecover.pagecover img {
+  max-height: 100px;
+}
+
+main #breadcrumb nav {
+  margin: 15px auto;
+}
+main #breadcrumb nav a {
+  color: #053e41;
+  text-decoration: none;
+}
+main #breadcrumb nav a:hover {
+  color: #09696d;
+}
+main #content.content {
+  margin: 50px auto 100px;
+}
+main #content.content h3.titre {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+main #content.content h3.titre:hover {
+  color: #09696d;
+}
+main #content.content h3.libelle {
+  font-size: 1.3rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: solid 3px #022d2d;
+}
+main #content.content img {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+main #content.content img:hover {
+  transform: scale(1.05);
+}
+main #content.content p {
+  text-align: justify;
+}
+main #content.content .social-icons {
+  padding-left: 25px;
+}
+main #content.content .social-icons a.icon-social {
+  font-size: 2.7rem;
+  padding: 0 3px;
+}
+main #content.content .social-icons a.icon-social.facebook {
+  color: #073391;
+}
+main #content.content .social-icons a.icon-social.twitter {
+  color: #00acee;
+}
+main #content.content .social-icons a.icon-social.youtube {
+  color: #c4302b;
+}
+main #content.content .social-icons a.icon-social.linkedin {
+  color: #0e76a8;
+}
+main #content.content .social-icons a.icon-social.instagram {
+  color: #8a3ab9;
+}
+main #content.content .social-icons a.icon-social:hover {
+  color: #09696d;
+}
+main #content.content .pageintegration {
+  margin-top: 50px;
+}
+main #professionnels.page-professionnels {
+  margin: 50px auto;
+}
+main #professionnels.page-professionnels h3.libelle {
+  font-size: 1.3rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: solid 3px #022d2d;
+  margin-bottom: 20px;
+}
+main #professionnels.page-professionnels .form-check {
+  padding-bottom: 7px;
+}
+main #professionnels.page-professionnels .annuaire .card .card-body {
+  font-size: 0.9rem;
+}
+main #professionnels.page-professionnels .annuaire .card:hover {
+  background: #053e41;
+  color: white;
+}
+main #professionnels.page-professionnels .annuaire .card:hover a {
+  color: white;
+}
+main #professionnels.page-professionnels .annuaire .card .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+main #professionnels.page-professionnels .annuaire .card a {
+  color: black;
+  text-decoration: none;
+}
+main #professionnels.page-professionnels .annuaire .card .btn-group {
+  margin-top: 10px;
+}
+main #travaux .close {
+  font-size: 1.5rem;
+}
+main #travaux .col-12 img {
+  opacity: 0.7;
+  cursor: pointer;
+  margin: 2rem;
+  width: 100%;
+}
+main #travaux .col-12 img:hover {
+  opacity: 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+main #travaux .galerie {
+  margin: 50px auto 100px;
+}
+main #travaux .galerie .col {
+  margin: 7px auto;
+}
+
+footer #partenaires.partenaires h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #053e41;
+}
+footer #partenaires.partenaires .logo-partenaires {
+  width: 100%;
+  display: inline;
+}
+footer #partenaires.partenaires .logo {
+  display: inline;
+}
+footer #footer.footer {
+  background: #022d2d;
+}
+footer #footer.footer .container {
+  padding: 100px 0 10px 0;
+  color: #b9b7b7;
+}
+footer #footer.footer .container img {
+  float: left;
+  padding: 10px 15px 20px 10px;
+  margin-right: 10px;
+  border: solid 1px rgba(92, 91, 91, 0.4);
+}
+footer #footer.footer .container a {
+  color: #7b9190;
+  text-decoration: none;
+}
+footer #footer.footer .container a:hover {
+  color: #07ddd7;
+}
+footer #footer.footer .container .rubrique div {
+  padding-bottom: 10px;
+}
+footer #footer.footer .container .social-line {
+  margin-top: 30px;
+  padding-top: 15px;
+  padding-bottom: 0;
+  border-top: solid 1px rgba(123, 145, 144, 0.4);
+}
+footer #footer.footer .container .social-line .condition {
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: end;
+  align-content: center;
+  align-items: center;
+}
+footer #footer.footer .container .social-line .condition a:last-child {
+  padding-left: 10px;
+}
+footer #footer.footer .container .social-line .condition a:first-child {
+  padding-right: 10px;
+}
+footer #footer.footer .container .social-line .social {
+  font-size: 1.5rem;
+}
+footer #footer.footer .container .social-line .social .facebook:hover {
+  color: #073391;
+}
+footer #footer.footer .container .social-line .social .linkedin:hover {
+  color: #0e76a8;
+}
+footer #footer.footer .container .social-line .social .instagram:hover {
+  color: #8a3ab9;
+}
+footer #footer.footer .container .social-line .social .youtube:hover {
+  color: #c4302b;
+}
+footer #footer.footer .container .social-line .social .twitter:hover {
+  color: #00acee;
+}
+footer #copyright.copyright {
+  background: #000c0c;
+}
+footer #copyright.copyright .container {
+  padding: 10px 0;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #615f5f;
+}
+footer #copyright.copyright .container a {
+  color: #615f5f;
+  text-decoration: none;
+}
+footer #copyright.copyright .container a:hover {
+  color: #ccc;
+}
+
+/*# sourceMappingURL=immopage.css.map */

@@ -1,0 +1,59 @@
+$main-color: #09696d;
+$secondary-color: #053e41;
+$third-color: #026666;
+$fouth-color: #2fbab6;
+
+
+.icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+@mixin couleurprincipale {
+  color: $main-color;
+}
+
+@mixin couleursecndaire {
+  color: $secondary-color;
+}
+
+@mixin couleurtertiaire {
+  color: $third-color;
+}
+
+@mixin couleurquatre {
+  color: $fouth-color;
+}
+
+@mixin bgsecondaire{
+  background: $secondary-color;
+}
+
+@mixin bgnavbar{
+  background: rgba(2,102,102, 0.5);
+}
+
+@mixin bgnavbar-scroll {
+  background: rgba(2,102,102, 0.9);
+}
+
+@mixin facebook {
+  color: #073391;
+}
+
+@mixin instagram {
+  color: #8a3ab9 ;
+}
+
+@mixin linkedin {
+  color: #0e76a8 ;
+}
+
+@mixin youtube {
+  color: #c4302b ;
+}
+
+@mixin twitter {
+  color: #00acee ;
+}

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}SkyJade {% endblock %}</title>
-    <link rel="icon" href="">
+    <link rel="icon" href="{{ absolute_url(asset('build/images/glyph.png')) }}">
 
     {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
     {% block stylesheets %}
@@ -36,9 +36,9 @@
 
 
 {% block javascripts %}
-    {{ encore_entry_script_tags('app') }}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    {{ encore_entry_script_tags('app') }}
     <script>
         AOS.init();
     </script>

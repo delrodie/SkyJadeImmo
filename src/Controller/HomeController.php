@@ -14,12 +14,18 @@ class HomeController extends AbstractController
      */
     public function index(): Response
     {
-		$maintenance = true;
+		$maintenance = false;
 		if ($maintenance)
 			$render = 'home/maintenance.html.twig';
 		else
 			$render = 'home/index.html.twig';
 		
-        return $this->render($render);
+        return $this->render($render,[
+			'domaines' => false,
+	        'presentation' => false,
+	        'videos' => null,
+	        'conseils' => null,
+	        'menu' => 'ACCUEIL'
+        ]);
     }
 }

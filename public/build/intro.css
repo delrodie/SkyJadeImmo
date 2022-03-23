@@ -1,0 +1,124 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap);
+@import url(https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css);
+@import url(https://unpkg.com/aos@2.3.1/dist/aos.css);
+.icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.bgmenu-scrol {
+  background: rgba(2, 102, 102, 0.9);
+}
+
+.cover .recherche {
+  width: 50%;
+  margin-top: -300px;
+  margin-left: 25%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+.cover .recherche input {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  color: white;
+  text-align: center;
+  border-right: 0;
+}
+.cover .recherche input::placeholder {
+  color: white;
+}
+.cover .recherche label {
+  color: white;
+  font-size: 1.7rem;
+}
+.cover .recherche .btn-search {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  border-right: white 1px solid;
+  border-top: white 1px solid;
+  border-bottom: white 1px solid;
+  border-left: 0;
+  color: white;
+}
+
+/*# sourceMappingURL=skyjade.css.map */
+
+.icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.accueil {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(/build/images/cover-accueil.79d2c45a.jpg);
+  background-size: cover;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.palette {
+  margin: 25px auto;
+}
+.palette a {
+  text-decoration: none;
+}
+.palette .immobilier h3 {
+  background: #fff;
+  padding: 20px 50px;
+  border-radius: 7px;
+  color: #053e41;
+}
+.palette .immobilier h3::before {
+  font: var(--fa-font-solid);
+  content: "\e3af";
+  padding-right: 15px;
+}
+.palette .immobilier h3:hover {
+  background: #053e41;
+  color: white;
+}
+.palette .automobile h3 {
+  background: #fff;
+  padding: 20px 50px;
+  border-radius: 7px;
+  color: #053e41;
+}
+.palette .automobile h3::before {
+  font: var(--fa-font-solid);
+  content: "\f1b9";
+  padding-right: 15px;
+}
+.palette .automobile h3:hover {
+  background: #053e41;
+  color: white;
+}
+
+.maintenance h5 {
+  font-style: italic;
+}
+.maintenance h5:hover {
+  cursor: pointer;
+  color: #053e41;
+}
+
+/*# sourceMappingURL=accueil.css.map */
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW50cm8uY3NzIiwibWFwcGluZ3MiOiI7Ozs7QUFLQTtFQUNFLHFCQUFxQjtFQ0V2QjtFQUNJO0FEQUo7O0FBRUE7RUFDRSxxQkFBcUI7RUNHdkI7RUFDSTtBRERKOztBQ0lBO0VDa0JFO0FGbEJGOztBQ01JO0VBQ0k7QURIUjs7QUFFQTtFQ0tRO0VBQ0E7RUFDQTtFREhOLHVCQUF1QjtFQ0tqQjtFQUNJO0VBQ0E7QURIWjtBQUNBO0VBQ0UsK0NBQStDO0VDS3JDO0VBQ0k7RURIZCxlQUFlO0FDT1Q7QURMUjtFQ09ZO0FETFo7QUNRUTtFQUNJO0VBQ0E7QUROWjtBQUNBO0VDUVk7RUFDQTtFRE5WLDJCQUEyQjtFQUMzQiw4QkFBOEI7RUFDOUIsY0FBYztFQUNkLFlBQVk7QUFDZDs7QUFFQSxzQ0FBc0M7O0FHcER0QztFQUNFO0VBQ0E7RUFDQTtBQ0hGOztBRE1BO0VBQ0ksNEdBQ0E7RUFLQTtBQ1JKOztBRFdBO0VBQ0k7RUFDQTtFQUNBO0VBQ0E7QUNSSjs7QURXQTtFQUNFO0FDUkY7QURVRTtFQUNFO0FDUko7QURXRTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0FDVEo7QURXSTtFQUNFO0VBQ0E7RUFDQTtBQ1ROO0FEYUk7RUFDRSxtQkEvQ1k7RUFnRFo7QUNYTjtBRGdCRTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0FDZEo7QURnQkk7RUFDRTtFQUNBO0VBQ0E7QUNkTjtBRGlCSTtFQUNFLG1CQWxFWTtFQW1FWjtBQ2ZOOztBRHFCRTtFQUNFO0FDbEJKO0FEb0JJO0VBQ0U7RUFDQSxjQTlFWTtBQzREbEI7O0FBRUEsc0NBQXNDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vYXNzZXRzL3Jlc3NvdXJjZXMvY3NzL3NreWphZGUuY3NzIiwid2VicGFjazovLy8uL2Fzc2V0cy9yZXNzb3VyY2VzL3Nhc3Mvc2t5amFkZS5zY3NzIiwid2VicGFjazovLy8uL2Fzc2V0cy9yZXNzb3VyY2VzL3Nhc3MvX3ZhcmlhYmxlcy5zY3NzIiwid2VicGFjazovLy8uL2Fzc2V0cy9yZXNzb3VyY2VzL3Nhc3MvYWNjdWVpbC5zY3NzIiwid2VicGFjazovLy8uL2Fzc2V0cy9yZXNzb3VyY2VzL2Nzcy9hY2N1ZWlsLmNzcyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==*/

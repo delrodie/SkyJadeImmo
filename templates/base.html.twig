@@ -11,6 +11,27 @@
         {% block stylesheets %}
         {% endblock %}
 
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9J1P93Q86E"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-9J1P93Q86E');
+        </script>
+
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-223826021-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-223826021-1');
+        </script>
+
     </head>
     <body>
         <header>
@@ -127,7 +148,8 @@
                                 &COPY; Copyright 2022  SKYJADE | Tous droits réservés
                             </div>
                             <div class="col-md-6 text-end">
-                                Powered by <a href="http://www.selfbrandingci.net" target="_blank">SELFBRANDING</a> | <a href="#">BackOffice</a>
+                                Powered by <a href="http://www.selfbrandingci.net" target="_blank">SELFBRANDING</a> |
+                                <a href="{{ absolute_url(path('app_backend_dashboard'))}}" target="_blank">BackOffice</a>
                             </div>
                         </div>
                     </div>

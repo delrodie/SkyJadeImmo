@@ -22,7 +22,7 @@ class HomeController extends AbstractController
 		
         return $this->render($render,[
 			'domaines' => false,
-	        'presentation' => false,
+	        'presentation' => true,
 	        'videos' => null,
 	        'conseils' => null,
 	        'menu' => 'ACCUEIL'

@@ -1,0 +1,79 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello FrontendPresentationController!{% endblock %}
+
+{% block body %}
+	<main>
+		<section id="breadcrumb">
+			<div class="container">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="{{ absolute_url(path('app_home'))}}"><i class="fas fa-home"></i></a></li>
+						<li class="breadcrumb-item"><a href="#">Qui sommes-nous?</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Presentation</li>
+					</ol>
+				</nav>
+			</div>
+		</section>
+		<section id="content" class="content">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8">
+						<h3 class="titre">Titre de la page</h3>
+						<img src="{{ absolute_url(asset('build/images/accueil.jpg'))}}" class="img-thumbnail" alt="">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dictum odio et sagittis cursus.
+							Vivamus et mauris sagittis, facilisis nisl vitae, rhoncus nibh. Curabitur luctus dolor id neque
+							vestibulum, quis pellentesque elit vehicula. Cras eu vehicula erat. Curabitur bibendum urna ut ultrices
+							sollicitudin. Donec id lectus magna. In auctor odio sed volutpat lacinia. Quisque nulla ex, imperdiet
+							volutpat faucibus at, dignissim nec nisl.
+						</p>
+						<p>
+							Donec condimentum fermentum nibh. Nunc hendrerit vehicula interdum. Nullam vestibulum dolor risus,
+							non maximus nulla dignissim sed. Aenean gravida felis at cursus varius. In sagittis cursus libero,
+							eget tempus leo bibendum nec. Curabitur sit amet sem venenatis mi interdum viverra. Praesent iaculis
+							eros eget tincidunt aliquet. Etiam nisl purus, consequat sed iaculis sed, consequat nec turpis.
+							Fusce condimentum congue libero eget fermentum. Sed aliquet aliquam malesuada. Class aptent taciti
+							sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+						</p>
+						<p>
+							Aenean vehicula commodo feugiat. Fusce iaculis egestas nibh, cursus imperdiet velit ornare quis.
+							Suspendisse volutpat luctus elit, nec fringilla magna rhoncus varius. Nunc ex arcu, ultricies commodo
+							cursus in, tristique quis sem. Sed quis pulvinar arcu, vitae eleifend magna. In hac habitasse platea dictumst.
+							Aenean ullamcorper nisi sed pharetra dictum. Sed consequat elementum lacus, in tincidunt turpis condimentum et.
+							Quisque efficitur tortor eu mollis ultricies.
+						</p>
+					</div>
+					<div class="col-lg-4 d-none d-lg-block">
+						<div class="follow">
+							<h3 class="libelle">Nous suivre</h3>
+							<div class="social-icons">
+								<a href="#" class="icon-social facebook"><i class="fab fa-facebook-square"></i></a>
+								<a href="#" class="icon-social linkedin"><i class="fab fa-linkedin"></i></a>
+								<a href="#" class="icon-social instagram"><i class="fab fa-instagram-square"></i></a>
+								<a href="#" class="icon-social youtube"><i class="fab fa-youtube"></i></a>
+								<a href="#" class="icon-social twitter"><i class="fab fa-twitter-square"></i></a>
+							</div>
+						</div>
+						<div class="pageintegration">
+							<h3 class="libelle">Facebook</h3>
+							<div id="fb-root"></div>
+							<script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v13.0" nonce="JxvhsDQ1"></script>
+							<div class="fb-page" data-href="https://www.facebook.com/selfbrandingci/" data-tabs="timeline" data-width="" data-height="700" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/selfbrandingci/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/selfbrandingci/">SelfBranding</a></blockquote></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+{% endblock %}
+
+{% block slide %}
+	<section id="pagecover" class="pagecover">
+		<img src="{{ absolute_url(asset('build/images/pagecover_bg.jpg'))}}" class="d-block w-100" alt="Cover de la page">
+	</section>
+{% endblock%}
+
+{% block stylesheets %}
+	{{ encore_entry_link_tags('immobilierpage') }}
+{% endblock %}

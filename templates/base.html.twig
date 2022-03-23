@@ -37,9 +37,9 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                         <ul class="navbar-nav justify-content-between align-items-center">
                             <li class="nav-item">
-                                <a class="nav-link {{ menu ? 'active' : ''}} " aria-current="page" href="{{ absolute_url(path('app_home'))}}"><span>Accueil</span></a>
+                                <a class="nav-link {{ menu == 'ACCUEIL' ? 'active' : ''}} " aria-current="page" href="{{ absolute_url(path('app_home'))}}"><span>Accueil</span></a>
                             </li>
-                            <li class="nav-item dropdown">
+                            <li class="nav-item {{ menu == 'PRESENTATION' ? 'active' : ''}} dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Qui sommes-nous?
                                 </a>

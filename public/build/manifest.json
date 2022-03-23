@@ -5,6 +5,8 @@
   "build/intro.js": "/build/intro.js",
   "build/immobilieraccueil.css": "/build/immobilieraccueil.css",
   "build/immobilieraccueil.js": "/build/immobilieraccueil.js",
+  "build/immobilierpage.css": "/build/immobilierpage.css",
+  "build/immobilierpage.js": "/build/immobilierpage.js",
   "build/runtime.js": "/build/runtime.js",
   "build/vendors-node_modules_symfony_stimulus-bridge_dist_index_js-node_modules_core-js_modules_es_ob-7db861.js": "/build/vendors-node_modules_symfony_stimulus-bridge_dist_index_js-node_modules_core-js_modules_es_ob-7db861.js",
   "build/images/slide_bg.jpg": "/build/images/slide_bg.jpg",

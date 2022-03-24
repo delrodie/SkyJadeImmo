@@ -14,7 +14,8 @@ class MaintenanceType extends AbstractType
     {
         $builder
             ->add('statut', CheckboxType::class,[
-				'label' => 'Maintenance'
+				'label' => 'Maintenance',
+	            'required' => false
             ])
         ;
     }

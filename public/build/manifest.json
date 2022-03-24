@@ -9,6 +9,7 @@
   "build/immobilierpage.js": "/build/immobilierpage.js",
   "build/runtime.js": "/build/runtime.js",
   "build/vendors-node_modules_symfony_stimulus-bridge_dist_index_js-node_modules_core-js_modules_es_ob-7db861.js": "/build/vendors-node_modules_symfony_stimulus-bridge_dist_index_js-node_modules_core-js_modules_es_ob-7db861.js",
+  "build/images/slide2_bg.jpg": "/build/images/slide2_bg.jpg",
   "build/images/slide_bg.jpg": "/build/images/slide_bg.jpg",
   "build/images/pagecover_bg.jpg": "/build/images/pagecover_bg.jpg",
   "build/images/bg-accueil.jpg": "/build/images/bg-accueil.jpg",
@@ -16,5 +17,10 @@
   "build/images/cover-accueil.jpg": "/build/images/cover-accueil.jpg",
   "build/images/glyph.png": "/build/images/glyph.png",
   "build/images/logo.png": "/build/images/logo.png",
-  "build/images/logo-wb.png": "/build/images/logo-wb.png"
+  "build/images/logo_bw.svg": "/build/images/logo_bw.svg",
+  "build/images/logo_1.svg": "/build/images/logo_1.svg",
+  "build/images/logo-wb.png": "/build/images/logo-wb.png",
+  "build/images/logo_decline.svg": "/build/images/logo_decline.svg",
+  "build/images/glyph_bw.svg": "/build/images/glyph_bw.svg",
+  "build/images/glyph_1.svg": "/build/images/glyph_1.svg"
 }

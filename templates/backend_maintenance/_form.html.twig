@@ -1,0 +1,20 @@
+{{ form_start(form) }}
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="row form-group">
+                <div class="col-12 text-center">
+                    {{ form_widget(form.statut)}}
+                    {{ form_label(form.statut)}}
+                    {{ form_errors(form.statut)}}
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 text-right">
+                    {{ form_widget(form) }}
+                    <a href="{{ absolute_url(path('app_backend_maintenance_index'))}}" class="btn btn-outline-primary">Annuler</a>
+                    <button class="btn btn-primary">{{ button_label|default('Valider') }}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+{{ form_end(form) }}

@@ -63,7 +63,7 @@
             <li class="nav-item {% if menu == 'parametre' %}show{% endif %}">
                 <a href="#" class="nav-link with-sub"><i data-feather="box"></i> Parametres</a>
                 <nav class="nav nav-sub">
-                    <a href="#" class="nav-sub-link {% if sub_menu == 'maintenance' %} active{% endif %}">Maintenance</a>
+                    <a href="{{ absolute_url(path('app_backend_maintenance_index'))}}" class="nav-sub-link {% if sub_menu == 'maintenance' %} active{% endif %}">Maintenance</a>
                 </nav>
             </li>
             <li class="nav-item {% if menu == 'contact' %}show{% endif %}">

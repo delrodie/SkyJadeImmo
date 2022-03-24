@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>{% block title %}SkyJade {% endblock %}</title>
-        <link rel="icon" href="{{ absolute_url(asset('build/images/glyph.png')) }}">
+        <link rel="icon" href="{{ absolute_url(asset('build/images/glyph_bw.svg')) }}">
         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
         {% block stylesheets %}
         {% endblock %}
@@ -51,7 +51,7 @@
         <section id="menu" class="menu">
             <nav class="navbar navbar-expand-lg navbar-dark bg-transparent" id="navbar_top">
                 <div class="container"  data-aos="fade-up" data-aos-duration="2500">
-                    <a class="navbar-brand" href="{{ absolute_url(path('app_home'))}}"><img src=" {{ absolute_url(asset('build/images/logo-wb.png')) }}" alt="logo SkyJade" class="img-fluid" width="100"></a>
+                    <a class="navbar-brand" href="{{ absolute_url(path('app_home'))}}"><img src=" {{ absolute_url(asset('build/images/logo_decline.svg')) }}" alt="logo SkyJade" class="img-fluid" width="70"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -101,7 +101,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-4">
-                                <img src="{{ absolute_url(asset('build/images/logo-wb.png')) }}" alt="">
+                                <img src="{{ absolute_url(asset('build/images/logo_bw.svg')) }}" alt="">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit reprehenderit, autem debitis natus officia rerum, perferendis tenetur eum veniam laudantium at! Non alias quis similique? Perspiciatis labore blanditiis expedita sint?
                             </div>
                             <div class="col-lg-8 mt-md-5">

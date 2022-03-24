@@ -1,0 +1,28 @@
+{% extends 'backend_layout.html.twig' %}
+
+{% block title %}{{ parent() }} Gestion des maintenance{% endblock %}
+
+
+{% block body %}
+    {{ include('backend/entete.html.twig',{'rubrique': 'maintenance'}) }}
+
+    <div class="component-section no-code">
+        <h5 id="section1" class="tx-semibold">Formulaire d'enregistrement</h5>
+        <p class="mg-b-25"></p>
+        {% for label, messages in app.flashes %}
+            {% for message in messages %}
+                <div class="alert alert-{{ label }} alert-dismissible mg-b-25 fade show" role="alert">
+                    {{message}}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            {% endfor %}
+        {% endfor %}
+
+        {{ include('backend_maintenance/_form.html.twig', {'button_label': 'Valider'}) }}
+
+        {{ include('backend_maintenance/_delete_form.html.twig') }}
+    </div>
+
+{% endblock %}
